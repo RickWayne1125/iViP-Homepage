@@ -3,11 +3,16 @@ all by Hong Liu
 2016 Sep. 5th
 */
 
+body{
+	background-color:#11406C;
+}
+
 #nav-bar {
     z-index: 1000000;
     width: 100%;
-    height: 40px;
-    background-image: linear-gradient(0deg, rgba(24, 161, 227, 1.00) 0%, rgba(0, 85, 204, 1.00) 100%);
+    height: 50px;
+	background-color:#032951;
+    /*background-image: linear-gradient(0deg, rgba(24, 161, 227, 1.00) 0%, rgba(0, 85, 204, 1.00) 100%);*/
     position: fixed;
 }
 
@@ -17,13 +22,14 @@ all by Hong Liu
 }
 
 #nav-bar .iVip-logo {
-    height: 40px;
+    height: 50px;
     float: left;
+	background-image:linear-gradient(0deg,#fff 0%, #8AABCA 100%);
     margin: 0 0 0 10px;
 }
 
 #nav-bar .tsinghua-logo {
-    height: 40px;
+    height: 50px;
     float: left;
     margin: 0;
 }
@@ -35,7 +41,7 @@ all by Hong Liu
     border-right: 1px solid transparent;
 }
 
-#nav-bar ul {
+#sec-nav-bar ul {
     float: right;
 }
 
@@ -49,29 +55,31 @@ all by Hong Liu
     padding: 0 10px;
 }
 
-#nav-bar li a:active {
+/*#sec-nav-bar li a:active {
     text-decoration: none;
     color: #e2e2e2;
 }
 
-#nav-bar li a:hover {
+#sec-nav-bar li a:hover {
     text-decoration: none;
     color: #e2e2e2;
 }
 
-#nav-bar li.active {
+#sec-nav-bar li.active {
     border-left: 1px solid #0055cc;
     border-right: 1px solid #0055cc;
     background-color: #0088CC;
-}
+}*/
 
 #sec-nav-bar {
     z-index: 1000000;
     width: 100%;
-    height: 25px;
-    background-image: linear-gradient(0deg, rgba(191, 200, 201, 1.00) 0%, rgb(149, 159, 161) 100%);
+    height: 35px;
+	/*background-color:#FFFFFF;*/
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255,255,255,1.00) 100%);
     position: fixed;
-    margin-top: 40px;
+    margin-top:50px;
+	float:right;
 }
 
 #sec-nav-bar .container {
@@ -82,6 +90,8 @@ all by Hong Liu
 #sec-nav-bar li {
     float: right;
     list-style: none;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
 #sec-nav-bar li a {
@@ -89,22 +99,36 @@ all by Hong Liu
     font-size: 15px;
     text-decoration: none;
     line-height: 25px;
-    color: black;
+    color:#032951;
     padding: 0 10px;
     border-radius: 3px;
 }
 
-#sec-nav-bar li a:hover, #sec-nav-bar li.active a {
-    color: #575757;
-    background-color: #BCE8F1;
+#sec-nav-bar li a:hover{
+    color: #032951;
+    background-color: #8AABCA;
+	text-decoration-line: underline;
 }
 
+#sec-nav-bar li.active a {
+	color: #032951;
+	background-image:linear-gradient(0deg,#fff 0%, #8AABCA 100%);
+}
+/*#nav-gap{
+	width:100%;
+	hight:50px;
+	background-color: #FFFFFF;
+	position:fixed;
+	margin-top:40px;
+	margin-bottom: 0px;;
+	color:#fff;
+*/
 #box {
     position: absolute;
-    width: 960px;
-    margin-top: 40px;
-    left: 50%;
-    margin-left: -480px;
+    width: 100%;
+    margin-top: 50px;
+    /*left: 50%;
+    margin-left: -480px;*/
 }
 
 #box #myCarousel .myitem {
@@ -113,13 +137,13 @@ all by Hong Liu
     height: 360px;
 }
 
+
 #box #myCarousel .myitem .in-item {
     margin: 0 10%;
     text-shadow: 0 0 5px rgba(0, 0, 0, .2);
 }
 
 #box #myCarousel .myitem .in-item p {
-    text-indent: 2em;
     font-size: 20px;
     font-weight: bold;
 }
@@ -169,7 +193,7 @@ all by Hong Liu
     font-size: 14px;
     font-weight: bold;
     line-height: 1.42857143;
-    text-align: center;
+    text-align: right;
     cursor: pointer;
     border: 1px solid #2e6da4;
     border-radius: 6px;
@@ -184,18 +208,26 @@ all by Hong Liu
 #box #middle-title {
     text-align: center;
     font-size: 30px;
-    margin: 70px 0 30px 0;
+    margin: 70px 0px 30px 0;
     text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+	background-image:url(image/divider-top.png);
+	height:66px;
+	padding-top: 0px;
 }
 
 #box .separator {
     display: block;
     margin: 0 auto;
+	width:100%;
 }
 
 #box #brief-menu {
-    width: 660px;
+	padding-top: 0;
+    width:660px/* 660px*/;
     margin: 0 auto;
+	background-color:#8AABCA ;
+	text-align:center;
+	
 }
 
 #box #brief-menu .menu {
@@ -203,7 +235,8 @@ all by Hong Liu
     float: left;
     width: 200px;
     margin: 0 10px;
-    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    text-shadow: 1 1 1px #fff;
+	color:  #fff;
 }
 
 #box #brief-menu .menu a {
@@ -214,38 +247,48 @@ all by Hong Liu
     font-size: 25px;
     font-weight: bold;
     margin: 20px auto 10px auto;
+	color:  #8AABCA;
 }
 
 #box #brief-menu .menu p {
+	color:  #fff;
     font-size: 15px;
     text-indent: 10px;
     line-height: 15px;
 }
 
 #box .tail .outer-link {
-    margin: 50px auto 30px auto;
-    width: 380px;
+	box-shadow: #032951 0px -7px 5px inset;
+	background-color: #fff;
+	padding-bottom: 10px;
+	text-align:center;
+    /*margin: 50px auto 30px auto;
+    width: 380px;*/
 }
 
 #box .tail img {
+	display: inline-block;
     width: 150px;
-    margin: 0 20px;
+    margin: 10px 20px;
 }
 
-#box .tail p {
+#box .tailp {
     text-align: center;
     line-height: 1;
     font-size: 12px;
     font-weight: bold;
-    color: #5e5e5e;
+    color: #fff;
     text-transform: uppercase;
+	background-color: #032951;
+	height:90px;
+	padding-top: 20px;
 }
 
 #box h1 {
     font-size: 40px;
     text-shadow: 0 0 5px rgba(0, 0, 0, .2);
     font-weight: bold;
-    margin: 100px 80px 60px 80px;
+    margin: 50px 80px 40px 80px;
 }
 
 #box h2 {
@@ -260,25 +303,39 @@ all by Hong Liu
 }
 
 #box .news {
-    text-align: justify;
+    /*text-align: centerjustify*/;
     margin: 60px 80px 40px 80px;
+	background-color:#EAEFF6 ;
+	border-radius: 10px;
+	box-shadow: #032951  7px 7px 5px;
+	
 }
 
 #box .news .title {
+	text-align: center;
+	padding-top: 15px;
     font-size: 20px;
     font-weight: bold;
 }
 
 #box .news .content {
+	text-align: justify;
     text-indent: 2em;
+	margin: 0 30px 15px 30px;
 }
 
 #box .news .keyword {
+	padding-top: 10px;
     font-weight: bold;
+	margin: 0 30px 15px 30px;
+	height:50px;
 }
 
 #box .news .contact {
     font-size: 18px;
+	margin: 0 30px 30px 30px;
+	height: 50px;
+	text-align:center;
 }
 
 #box .research {
@@ -316,7 +373,8 @@ all by Hong Liu
 }
 
 #box .people {
-    margin: 40px auto 0 80px;
+    margin: 0px auto 0 0px;
+	text-align:center;;
 }
 
 #box .people a {
@@ -330,7 +388,7 @@ all by Hong Liu
 }
 
 #box .people a:hover, #box .people a:active {
-    background-color: #ffd8d3;
+    background-color: #B6D6F4;
     transition: 0.5s;
 }
 
@@ -363,12 +421,13 @@ all by Hong Liu
     border-radius: 3px;
     background-color: transparent;
     transition: 0.5s;
+	margin-left:28%;
 }
 
-#box .people p.left:hover {
-    background-color: #ffd8d3;
-    transition: 0.5s;
-}
+/*#box .people p.left:hover {
+    background-color: lemonchiffon;
+	transition: 0.5s;
+}*/
 
 #box .people p.left strong {
     -webkit-user-select: none;
@@ -389,6 +448,7 @@ all by Hong Liu
 
 #box .people p.left strong.year {
     background-color: #0055cc;
+	margin:15px 100px 15px 100px;
 }
 
 #box .people p.left strong.Intern {
@@ -408,8 +468,9 @@ all by Hong Liu
 }
 
 #box .paper {
-    margin: 40px auto 40px 80px;
-    text-align: justify;
+	width:90%;
+    margin: 40px 80px 40px 80px;
+    text-align: center;
 }
 
 #box .paper div {
@@ -419,17 +480,18 @@ all by Hong Liu
 
 #box .paper p {
     text-indent: 0;
-    padding: 5px;
+    padding: 10px;
     font-size: 14px;
     line-height: 1.5;
     margin-top: -10px;
-    text-align: justify;
+    text-align: center;
     border-radius: 3px;
     transition: 0.5s;
+	margin: -10px 20px 0;
 }
 
 #box .paper p:hover {
-    background-color: #ffd8d3;
+    background-color: lemonchiffon;
     transition: 0.5s;
 }
 
@@ -456,39 +518,154 @@ all by Hong Liu
 }
 
 #box #iVipvision {
-    display: inline-block;
+	background-image: url(image/lml.jpg);
+	padding-top=50xp;
+	text-align: justify;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%,800px;
+	height: 350px;
+	box-shadow:darkgray,10px 10px 10px;
+    /*display: inline-block;
     float: left;
     margin: 0 80px 20px 80px;
-    text-align: justify;
+    text-align: justify;*/
+}
+#box #iVipvision h1{
+	padding-top:50px;
+	margin:0 0 0 0;
+	color:#fff;
+	font-size:50px;
+	text-shadow: #032951 7px 7px 5px;
+	text-align:center;
+	
 }
 
 #box #iVipvision h2 {
+	margin-left: 50%;
     font-size: 30px;
     margin: 10px auto 20px 0;
+	color:#fff;
+	text-shadow: #032951 7px 7px 5px;
+	text-align:center;
 }
 
 #box #iVipvision p {
     font-size: 20px;
-    text-indent: 2em;
+	color:#fff;
+	text-shadow: #032951 7px 7px 5px;
+	text-align:center;
+	
 }
 
+#box #publications{
+	padding-top:50px;
+	margin:0 0 0 0;
+	color:#fff;
+	font-size:50px;
+	text-shadow: #032951 3px 3px 5px;
+	text-align:center;
+}
 #box #publications span {
     font-size: 60%;
     margin-left: 20px;
+	text-shadow: none;
 }
 
 #box #publications span a {
+	color:#032951;
     text-decoration: none;
     margin-left: 15px;
 }
 
+#box #contactmethod{
+	color:#032951;
+	font-weight: bold;
+}
+
 #box #contactmethod div {
     float: left;
-    width: 320px;
-    margin: 80px;
+    width: 45%;
+    margin: 20px;
+	text-align: center;
+	text-shadow: #ccc 2px 2px 5px;
+	/*background-color: #8AABCA;*/
 }
 
 #box #contactmethod div p.title {
     font-size: 20px;
     font-weight: bold;
+}
+/*#box #wrapperc{
+	background-image:url(image/lml.jpg);
+	background-attachment: fixed;
+	width:100%;
+	margin-top:50px;
+	background-repeat: no-repeat;
+	hight:480px;*/
+
+#bkg1{
+	background-color: #8AABCA;
+	position: absolute;
+}
+
+.hd1{
+	font-size:50px;
+	color: #fff;
+	text-shadow: #032951 7px 7px 0px;
+	text-align:center;
+	height:100px;
+	padding-top: 50px;
+}
+.hd2{
+	padding-top:50px;
+	margin:0 0 0 0;
+	color:#fff;
+	font-size:50px;
+	text-shadow: #032951 3px 3px 5px;
+	text-align:center;
+	height:70px;
+}
+.prj{
+	background-color:#8AABCA ;
+	margin: 30px 40px 60px 40px;
+	height:400px;
+	border-radius: 10px;
+	box-shadow: #032951  7px 7px 5px;
+}
+
+.prj img{
+	float:left;
+	border-radius: 10px;;
+}
+.prj .group{
+	font-size: 20px;
+	text-align:right;
+	color:#fff;
+	height: 30px;
+	background-color: #032951;
+	border-radius: 10px;
+}
+#box .prjh{
+	font-weight: bold;
+	font-size: 35px;
+	height:100px;
+	background-color: #8AABCA;
+	text-shadow: #F5F5F5 1px 1px 2px;
+}
+.prj p{
+	font-size:20px;
+	height: 250px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.peopleh{
+	text-align: center;
+	height:50px;
+	width: 100%;
+	font-size: 30px;
+	color:#032951;
+	background-color: #fff;
+	text-shadow:#C0C0C0 1px 1px 3px;
 }

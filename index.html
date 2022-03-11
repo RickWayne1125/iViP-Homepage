@@ -19,6 +19,12 @@
     <div class="container">
         <a href="index.html"><img src="image/iViplogo.png" class="iVip-logo"/></a>
         <a href="index.html"><img src="image/ofTsinghuaUniversity.png" class="tsinghua-logo"/></a>
+		
+    </div>
+</div>
+
+<div id="sec-nav-bar">
+    <div class="container">
         <ul>
             <li id="nav-contact"><a href="contact/contact.html">CONTACT</a></li>
             <li id="nav-publications"><a href="publications/publications.html">PUBLICATIONS</a></li>
@@ -35,15 +41,16 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
             <div class="item active">
                 <div class="myitem" style="background:url(image/carousel1.jpg);">
                     <div class="in-item">
                         <div>
-                            <h1>Welcome to iVip!</h1>
+                            <h1 style="text-shadow: 5px 5px 5px #8C8C8C; text-align: center;">Welcome to iVip!</h1>
                         </div>
-                        <div class="content">
+                        <div class="content" style="text-shadow: 5px 5px 5px #8C8C8C;">
                             <p>
                                 integrated Vision, intelligent perception.
                             </p>
@@ -61,14 +68,23 @@
                 <div class="myitem" style="background:url(image/carousel2.jpg);">
                     <div class="in-item">
                         <div>
-                            <h1><img src="image/2.png"/>Integrated Circuit</h1>
+                            <h1 style="text-align: right;padding-top: 20px;"><img src="image/1.png"/>Smart Eyes</h1>
                         </div>
-                        <div class="content">
-                            <p>
-                                Perceptual Computing Architectures and Integrated Circuits.
-                            </p>
+                        <div class="content"style="text-align: right;padding-top: 20px;">
+							<p><!--此处可以改变第二张滚动图的标题和内容-->
+							    iSensing Systems
+							</p>
+							<p>
+							    iEyes, iHearing and iTouching, etc.
+							</p>
+							<p>
+								<ul style="font-size:15px;list-style-type:none">
+								    <li><a href="research/research.html">project 1</a></li>
+								    <li><a href="research/research.html">project 2</a></li>
+									<li><a href="research/research.html">project 3</a></li>
+								</ul>
+							</p>
                         </div>
-                        <a href="research/research.html" class="btn">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -76,20 +92,50 @@
                 <div class="myitem" style="background:url(image/carousel3.jpg);">
                     <div class="in-item">
                         <div>
-                            <h1><img src="image/1.png"/>Smart Eyes</h1>
+                            <h1 style="text-align: right;padding-top: 20px;"><img src="image/1.png"/>iHearing</h1>
                         </div>
-                        <div class="content">
-                            <p>
-                                iSensing Systems
-                            </p>
-                            <p>
-                                iEyes, iHearing and iTouching, etc.
-                            </p>
+                        <div class="content"style="text-align: right;padding-top: 20px;">
+                        	<p><!--此处可以改变第二张滚动图的标题和内容-->
+                        	    iSensing Systems
+                        	</p>
+                        	<p>
+                        	    iEyes, iHearing and iTouching, etc.
+                        	</p>
+                        	<p>
+                        		<ul style="font-size:15px;list-style-type:none">
+                        		    <li><a href="research/research.html">project 1</a></li>
+                        		    <li><a href="research/research.html">project 2</a></li>
+                        			<li><a href="research/research.html">project 3</a></li>
+                        		</ul>
+                        	</p>
                         </div>
-                        <a href="research/research.html" class="btn">Learn More</a>
                     </div>
                 </div>
             </div>
+			<div class="item">
+			    <div class="myitem" style="background:url(image/carousel4.jpg);">
+			        <div class="in-item">
+			            <div>
+			                <h1 style="text-align: right;padding-top: 20px;"><img src="image/1.png"/>Smart Eyes</h1>
+			            </div>
+			            <div class="content"style="text-align: right;padding-top: 20px;">
+			            	<p><!--此处可以改变第二张滚动图的标题和内容-->
+			            	    iSensing Systems
+			            	</p>
+			            	<p>
+			            	    iEyes, iHearing and iTouching, etc.
+			            	</p>
+			            	<p>
+			            		<ul style="font-size:15px;list-style-type:none">
+			            		    <li><a href="research/research.html">project 1</a></li>
+			            		    <li><a href="research/research.html">project 2</a></li>
+			            			<li><a href="research/research.html">project 3</a></li>
+			            		</ul>
+			            	</p>
+			            </div>
+			        </div>
+			    </div>
+			</div>
         </div>
         <a class="carousel-control left" href="#myCarousel"
            data-slide="prev"></a>
@@ -97,32 +143,39 @@
            data-slide="next"></a>
     </div>
     <p id="middle-title">Science Brings Fun to Life !</p>
-    <img src="image/divider-top.png" class="separator"/>
-    <div id="brief-menu">
+    <!--<img src="image/divider-top.png" class="separator"/>-->
+    <div id="brief-menu" style="width:1100px;">
         <div class="menu">
             <a href="news/news.html"><h1>Latest News</h1></a>
-            <a href="research/research.html"><h1>iVip Research</h1></a>
-            <a href="research/research.html#active"><p>Active Projects</p></a>
-            <a href="research/research.html#past"><p>Past Projects</p></a>
-            <a href="research/research.html#show"><p>Show Room</p></a>
+            <a href="news/news.html"><p>公众号</p></a>
+			<a href="news/news.html"><p>实习生及合作研究生</p></a>
+			<a href="news/news.html"><p>方向Ⅰ</p></a>
+			<a href="news/news.html"><p>方向Ⅱ</p></a>
         </div>
+		<div class="menu">
+		    <a href="research/research.html"><h1>Research</h1></a>
+		    <a href="research/research.html"><p>Future Sensors</p></a>
+		    <a href="research/research.html"><p>iSensing System</p></a>
+		</div>
         <div class="menu">
             <a href="people/people.html"><h1>Faces of iVip</h1></a>
-            <a href="people/people.html#faculty"><p>Faculty</p></a>
-            <a href="people/people.html#graduates"><p>Ph. D. / Master</p></a>
-            <a href="people/people.html#undergraduates"><p>Undergraduates</p></a>
-            <a href="people/people.html#alumni"><p>Alumni</p></a>
-            <a href="people/people.html#activities"><p>Group Activities</p></a>
+            <a href="people/people.html"><p>Faculty</p></a>
+            <a href="people/people.html"><p>Ph. D. / Master</p></a>
+            <a href="people/people.html"><p>Undergraduates</p></a>
+            <a href="people/people.html"><p>Alumni</p></a>
         </div>
         <div class="menu">
             <a href="publications/publications.html"><h1>Publications</h1></a>
-            <a href="publications/publications.html#journal"><p>Journal Papers</p></a>
-            <a href="publications/publications.html#conference"><p>Conference Papers</p></a>
-            <a href="publications/publications.html#opensource"><p>Open Source</p></a>
-            <a href="contact/contact.html"><h1>Contact Us</h1></a>
+			<a href="publications/publications.html"><p>2020 2019</p></a>
+			<a href="publications/publications.html"><p>2018 2017</p></a>
+			<a href="publications/publications.html"><p>2016 2015</p></a>
+			<a href="publications/publications.html"><p>2006</p></a>
         </div>
+		<div class="menu">
+			<a href="contact/contact.html"><h1>Contact</h1></a>
+		</div>
     </div>
-    <img src="image/divider-bottom.png" class="separator"/>
+    <img src="image/divider-bottom.png"  class="separator"/>
     <div class="tail">
         <div class="outer-link">
             <!--don't reformat the following four line-->
@@ -131,14 +184,16 @@
                 href="http://www.ee.tsinghua.edu.cn/publish/eeen/index.html" target="_blank"><img
                 src="image/eelogo.jpg"/></a>
         </div>
-        <p>Copyright © 2016, iVip Group, NICS Lab,Dept. of EE, Tsinghua University</p>
-        <p>Beijing P.R.C All rights reserved</p>
-        <p>
-            <script>
-                var d = document.lastModified;
-                document.write("Last Update " + d.substring(0, d.lastIndexOf(" ")));
-            </script>
-        </p>
+        <div class="tailp">
+			<p>Copyright © 2019, iVip Group, NICS Lab,Dept. of EE, Tsinghua University</p>
+			<p>Beijing P.R.C All rights reserved</p>
+			<p>
+			    <script>
+			        var d = document.lastModified;
+			        document.write("Last Update " + d.substring(0, d.lastIndexOf(" ")));
+			    </script>
+			</p>
+		</div>
     </div>
 </div>
 <!-- Start of StatCounter Code for Default Guide -->
